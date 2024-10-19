@@ -10,9 +10,8 @@ BIN_PATH := bin
 SRC_PATH := src
 
 
-
 # compile macros
-TARGET_NAME := hello-world-gtk
+TARGET_NAME := make-a-choice
 TARGET := $(BIN_PATH)/$(TARGET_NAME)
 TARGET_DEBUG := $(DBG_PATH)/$(TARGET_NAME)
 
@@ -28,7 +27,7 @@ default : makedir all
 
 
 all: 
-	gcc $(GTK_CFLAGS) -o $(TARGET) src/hello-world-gtk.c $(GTK_LDFLAGS)
+	gcc $(GTK_CFLAGS) -o $(TARGET) src/make-a-choice.c $(GTK_LDFLAGS)
 
 
 makedir:
